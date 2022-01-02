@@ -53821,6 +53821,6 @@ Webflow.require("ix2").init({
 
 Webflow.require("commerce") &&
   Webflow.require("commerce").init({
-    siteId: "5e80894f63c557e083ed96b4",
-    apiUrl: "https://render.webflow.com",
+    siteId: "Sankalp",
+    apiUrl: "",
   });
