@@ -27424,7 +27424,7 @@
         t.IX2_ID_DELIMITER =
           void 0);
     t.IX2_ID_DELIMITER = "|";
-    t.WF_PAGE = "data-wf-page";
+    t.WF_PAGE = "data-page";
     t.W_MOD_JS = "w-mod-js";
     t.W_MOD_IX = "w-mod-ix";
     t.BOUNDARY_SELECTOR = ".w-dyn-item";
@@ -50830,7 +50830,7 @@ Webflow.require("ix2").init({
       target: {
         appliesTo: "ELEMENT",
         styleBlockIds: [],
-        id: "5e847aa8ffbe604068833ba1|8e130818-647a-5ae2-c911-1131eabfb306",
+        id: "Sankalp|8e130818-647a-5ae2-c911-1131eabfb306",
       },
       config: {
         loop: false,
@@ -50864,7 +50864,7 @@ Webflow.require("ix2").init({
       target: {
         appliesTo: "ELEMENT",
         styleBlockIds: [],
-        id: "5e847aa8ffbe604068833ba1|8e130818-647a-5ae2-c911-1131eabfb306",
+        id: "Sankalp|8e130818-647a-5ae2-c911-1131eabfb306",
       },
       config: {
         loop: false,
@@ -50898,7 +50898,7 @@ Webflow.require("ix2").init({
       target: {
         appliesTo: "ELEMENT",
         styleBlockIds: [],
-        id: "5e847aa8ffbe604068833ba1|b6ee397e-34f8-d374-0a5c-1ecf5c1e6307",
+        id: "Sankalp|b6ee397e-34f8-d374-0a5c-1ecf5c1e6307",
       },
       config: {
         loop: false,
@@ -50932,7 +50932,7 @@ Webflow.require("ix2").init({
       target: {
         appliesTo: "ELEMENT",
         styleBlockIds: [],
-        id: "5e847aa8ffbe604068833ba1|b6ee397e-34f8-d374-0a5c-1ecf5c1e6307",
+        id: "Sankalp|b6ee397e-34f8-d374-0a5c-1ecf5c1e6307",
       },
       config: {
         loop: false,
@@ -50966,7 +50966,7 @@ Webflow.require("ix2").init({
       target: {
         appliesTo: "ELEMENT",
         styleBlockIds: [],
-        id: "5e847aa8ffbe604068833ba1|ec2afc2d-f943-794b-6c3e-3dc130fbfeed",
+        id: "Sankalp|ec2afc2d-f943-794b-6c3e-3dc130fbfeed",
       },
       config: {
         loop: false,
@@ -51000,7 +51000,7 @@ Webflow.require("ix2").init({
       target: {
         appliesTo: "ELEMENT",
         styleBlockIds: [],
-        id: "5e847aa8ffbe604068833ba1|ec2afc2d-f943-794b-6c3e-3dc130fbfeed",
+        id: "Sankalp|ec2afc2d-f943-794b-6c3e-3dc130fbfeed",
       },
       config: {
         loop: false,
@@ -51026,7 +51026,7 @@ Webflow.require("ix2").init({
       target: {
         appliesTo: "PAGE",
         styleBlockIds: [],
-        id: "5e847aa8ffbe604068833ba1",
+        id: "Sankalp",
       },
       config: [
         {
@@ -51063,7 +51063,7 @@ Webflow.require("ix2").init({
       target: {
         appliesTo: "PAGE",
         styleBlockIds: [],
-        id: "5e847aa8ffbe604068833ba1",
+        id: "Sankalp",
       },
       config: {
         loop: false,
@@ -51089,7 +51089,7 @@ Webflow.require("ix2").init({
       target: {
         appliesTo: "ELEMENT",
         styleBlockIds: [],
-        id: "5e847aa8ffbe604068833ba1|704f228a-8df5-ffa9-c2aa-29c84ad7d262",
+        id: "Sankalp|704f228a-8df5-ffa9-c2aa-29c84ad7d262",
       },
       config: [
         {
@@ -51118,7 +51118,7 @@ Webflow.require("ix2").init({
       target: {
         appliesTo: "ELEMENT",
         styleBlockIds: [],
-        id: "5e847aa8ffbe604068833ba1|7fddf232-87f5-9178-f759-6162de48fac6",
+        id: "Sankalp|7fddf232-87f5-9178-f759-6162de48fac6",
       },
       config: [
         {
@@ -51147,7 +51147,7 @@ Webflow.require("ix2").init({
       target: {
         appliesTo: "ELEMENT",
         styleBlockIds: [],
-        id: "5e847aa8ffbe604068833ba1|c0ad97f2-2461-377f-0d16-9bb4ea129ed1",
+        id: "Sankalp|c0ad97f2-2461-377f-0d16-9bb4ea129ed1",
       },
       config: [
         {
@@ -51176,7 +51176,7 @@ Webflow.require("ix2").init({
       target: {
         appliesTo: "ELEMENT",
         styleBlockIds: [],
-        id: "5e847aa8ffbe604068833ba1|ededa43e-fca0-979f-fa07-c350e76c59dd",
+        id: "Sankalp|ededa43e-fca0-979f-fa07-c350e76c59dd",
       },
       config: [
         {
@@ -51205,7 +51205,7 @@ Webflow.require("ix2").init({
       target: {
         appliesTo: "ELEMENT",
         styleBlockIds: [],
-        id: "5e847aa8ffbe604068833ba1|4cb83808-f988-e8d9-cf74-c6011c7b007b",
+        id: "Sankalp|4cb83808-f988-e8d9-cf74-c6011c7b007b",
       },
       config: [
         {
@@ -51234,7 +51234,7 @@ Webflow.require("ix2").init({
       target: {
         appliesTo: "ELEMENT",
         styleBlockIds: [],
-        id: "5e847aa8ffbe604068833ba1|6b468556-adf2-b53f-066f-f849d64c6523",
+        id: "Sankalp|6b468556-adf2-b53f-066f-f849d64c6523",
       },
       config: [
         {
