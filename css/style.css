@@ -5615,6 +5615,10 @@ figcaption {
   text-align: center;
 }
 
+.max-1000 {
+  max-width: 1000px;
+}
+
 .max-800 {
   max-width: 800px;
 }
