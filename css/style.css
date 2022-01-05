@@ -790,6 +790,9 @@ textarea.w-select {
   a.brand.w-nav-brand {
   width: 168px !important;
   }
+  .footer-brand-logo {
+    width: 50% !important;
+  }
 }
 @media screen and (max-width: 479px) {
   .w-container {
@@ -4672,7 +4675,7 @@ figcaption {
 
 .section.footer-section {
   padding-top: 80px;
-  padding-bottom: 50px;
+  padding-bottom: 0;
   background-color: #cfddee;
   color: #081158;
 }
@@ -7539,7 +7542,7 @@ a.brand.w-nav-brand {
 
   .container.footer-container {
     grid-column-gap: 25px;
-    grid-row-gap: 50px;
+    grid-row-gap: 100px;
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
   }
@@ -7753,6 +7756,7 @@ a.brand.w-nav-brand {
   .container.footer-container {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+    grid-row-gap: 50px;
   }
 
   .jumbo {
