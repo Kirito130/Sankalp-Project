@@ -26499,7 +26499,7 @@
           i = document,
           o = e("html"),
           a = e("body"),
-          c = ".w-webflow-badge",
+          c = ".s-sankalp-badge",
           u = window.location,
           s = /PhantomJS/i.test(navigator.userAgent),
           l =
@@ -26531,7 +26531,7 @@
                 !s &&
                 ((t =
                   t ||
-                  ((n = e('<a class="w-webflow-badge"></a>').attr(
+                  ((n = e('<a class="s-sankalp-badge"></a>').attr(
                     "href",
                     "https://webflow.com?utm_campaign=brandjs"
                   )),
@@ -50733,10 +50733,7 @@
     );
   },
 ]);
-/**
- * ----------------------------------------------------------------------
- * Webflow: Interactions 2.0: Init
- */
+
 Webflow.require("ix2").init({
   events: {
     "e-2": {
@@ -52295,7 +52292,7 @@ Webflow.require("ix2").init({
                 duration: 500,
                 target: {
                   useEventTarget: "CHILDREN",
-                  selector: ".column.max-600",
+                  selector: ".col-content",
                   selectorGuids: [
                     "0cd03fa9-9b9c-fc05-12cf-3835ba4a06b4",
                     "7dd2cac5-b844-4177-256e-de286cc798f9",
@@ -52314,7 +52311,7 @@ Webflow.require("ix2").init({
                 duration: 500,
                 target: {
                   useEventTarget: "CHILDREN",
-                  selector: ".column.max-600",
+                  selector: ".col-content",
                   selectorGuids: [
                     "0cd03fa9-9b9c-fc05-12cf-3835ba4a06b4",
                     "7dd2cac5-b844-4177-256e-de286cc798f9",
@@ -52471,7 +52468,7 @@ Webflow.require("ix2").init({
                 duration: 500,
                 target: {
                   useEventTarget: "CHILDREN",
-                  selector: ".column.max-600",
+                  selector: ".col-content",
                   selectorGuids: [
                     "0cd03fa9-9b9c-fc05-12cf-3835ba4a06b4",
                     "7dd2cac5-b844-4177-256e-de286cc798f9",
@@ -52490,7 +52487,7 @@ Webflow.require("ix2").init({
                 duration: 1000,
                 target: {
                   useEventTarget: "CHILDREN",
-                  selector: ".column.max-600",
+                  selector: ".col-content",
                   selectorGuids: [
                     "0cd03fa9-9b9c-fc05-12cf-3835ba4a06b4",
                     "7dd2cac5-b844-4177-256e-de286cc798f9",
@@ -52563,7 +52560,7 @@ Webflow.require("ix2").init({
                 duration: 500,
                 target: {
                   useEventTarget: "CHILDREN",
-                  selector: ".column.max-600",
+                  selector: ".col-content",
                   selectorGuids: [
                     "0cd03fa9-9b9c-fc05-12cf-3835ba4a06b4",
                     "7dd2cac5-b844-4177-256e-de286cc798f9",
@@ -52634,7 +52631,7 @@ Webflow.require("ix2").init({
                 duration: 1000,
                 target: {
                   useEventTarget: "CHILDREN",
-                  selector: ".column.max-600",
+                  selector: ".col-content",
                   selectorGuids: [
                     "0cd03fa9-9b9c-fc05-12cf-3835ba4a06b4",
                     "7dd2cac5-b844-4177-256e-de286cc798f9",
@@ -52659,7 +52656,7 @@ Webflow.require("ix2").init({
                 duration: 0,
                 target: {
                   useEventTarget: "CHILDREN",
-                  selector: ".column.max-600",
+                  selector: ".col-content",
                   selectorGuids: [
                     "0cd03fa9-9b9c-fc05-12cf-3835ba4a06b4",
                     "7dd2cac5-b844-4177-256e-de286cc798f9",
@@ -52717,9 +52714,9 @@ Webflow.require("ix2").init({
                       selector: ".navbar",
                       selectorGuids: ["64959c40-698a-7415-b18d-f3b7b915dd06"],
                     },
-                    rValue: 255,
-                    gValue: 255,
-                    bValue: 255,
+                    rValue: 207,
+                    gValue: 221,
+                    bValue: 238,
                     aValue: 0,
                   },
                 },
@@ -52757,9 +52754,9 @@ Webflow.require("ix2").init({
                       selector: ".navbar",
                       selectorGuids: ["64959c40-698a-7415-b18d-f3b7b915dd06"],
                     },
-                    rValue: 255,
-                    gValue: 255,
-                    bValue: 255,
+                    rValue: 207,
+                    gValue: 221,
+                    bValue: 238,
                     aValue: 1,
                   },
                 },
