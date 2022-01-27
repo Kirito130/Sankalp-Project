@@ -4263,7 +4263,7 @@ a.brand.s-nav-brand {
   border-radius: 10px;
 }
 
-.free-workout-shape {
+.career-sankalp {
   position: absolute;
   left: auto;
   top: auto;
@@ -4290,7 +4290,7 @@ a.brand.s-nav-brand {
   display: -ms-flexbox;
   display: flex;
   width: 150vw;
-  height: 200px;
+  height: 150px;
   margin-top: auto;
   margin-bottom: auto;
   -webkit-box-pack: center;
@@ -4928,7 +4928,7 @@ a.brand.s-nav-brand {
   }
 
   .hero-line {
-    height: 150px;
+    height: 130px;
   }
 
   .about-video-wrap {
@@ -5176,7 +5176,7 @@ a.brand.s-nav-brand {
   }
 
   .hero-line {
-    height: 125px;
+    height: 85px;
     padding-right: 30vw;
     padding-left: 30vw;
     -webkit-box-orient: horizontal;
