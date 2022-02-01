@@ -422,13 +422,13 @@
     t.DOWNLOAD_FILES_FAKE_DATA = [
       {
         id: "5d8fcb6d94dd1853060fb3b3",
-        name: "The modern web design process - Webflow Ebook.pdf",
-        url: "https://assets-global.website-files.com/5cf6b7202bf8199f50d43e6c/5e9dd8a680b972888929747b_The%20modern%20web%20design%20process%20-%20Webflow%20Ebook.pdf",
+        name: " Ebook.pdf",
+        url: "",
       },
       {
         id: "5d8fcb6d94dd1853060fb3b4",
-        name: "The freelance web designers guide - Webflow Ebook.pdf",
-        url: "https://assets-global.website-files.com/5cf6b7202bf8199f50d43e6c/5e9dd8e6abe52b33243a22cf_The%20freelance%20web%20designer%E2%80%99s%20guide%20-%20Webflow%20Ebook.pdf",
+        name: " Ebook.pdf",
+        url: "",
       },
     ];
     t.DOWNLOAD_FILES_KEY_PATH = "download-files";
@@ -576,7 +576,7 @@
     var r = {},
       i = {},
       o = [],
-      a = window.Webflow || [],
+      a = window.Sankalp || [],
       c = window.jQuery,
       u = c(window),
       s = c(document),
@@ -634,7 +634,7 @@
             : "slug" === e
             ? n && window.__sk_slug
             : "editor" === e
-            ? window.WebflowEditor
+            ? window.SankalpEditor
             : "test" === e
             ? window.__sk_test
             : "frame" === e
@@ -665,7 +665,7 @@
             return !0;
           });
     var _,
-      y = "resize.webflow orientationchange.webflow load.webflow";
+      y = "resize.Sankalp orientationchange.Sankalp load.Sankalp";
     function T(e, t) {
       var n = [],
         r = {};
@@ -700,7 +700,7 @@
     (r.resize = T(u, y)),
       (r.scroll = T(
         u,
-        "scroll.webflow resize.webflow orientationchange.webflow load.webflow"
+        "scroll.Sankalp resize.Sankalp orientationchange.Sankalp load.Sankalp"
       )),
       (r.redraw = T()),
       (r.location = function (e) {
@@ -731,7 +731,7 @@
       }),
       c(r.ready),
       N(),
-      (e.exports = window.Webflow = r);
+      (e.exports = window.Sankalp = r);
   },
   function (e, t, n) {
     var r = n(208),
@@ -939,7 +939,7 @@
         : t;
     };
     t.setElementLoading = function (e) {
-      var t = window.Webflow.tram(e);
+      var t = window.Sankalp.tram(e);
       t.set({ opacity: 0.2 }), t.add("opacity 500ms ease-in-out");
       return (
         (function e() {
@@ -6445,7 +6445,7 @@
         function e(t) {
           if (
             ((0, o.default)(this, e),
-            !window.Webflow.env("design") && !window.Webflow.env("preview"))
+            !window.Sankalp.env("design") && !window.Sankalp.env("preview"))
           ) {
             var n = t.querySelector("[".concat(s.STRIPE_ECOMMERCE_KEY, "]"));
             if (!n)
@@ -8563,7 +8563,7 @@
               timezone: o,
               pageLinkHrefPrefix: c,
               collectionSlugMap: s,
-              currencySettings: window.__WEBFLOW_CURRENCY_SETTINGS,
+              currencySettings: window.__Sankalp_CURRENCY_SETTINGS,
             }),
             g = "detailPage" === r.type ? b : null,
             _ = E(t, p, g);
@@ -9004,8 +9004,8 @@
       M = n(317);
     t.initializeStripeElements = function (e) {
       if (
-        !window.Webflow.env("design") &&
-        !window.Webflow.env("preview") &&
+        !window.Sankalp.env("design") &&
+        !window.Sankalp.env("preview") &&
         e.isInitialized()
       ) {
         var t = (0, l.findAllElementsByNodeType)(
@@ -9337,7 +9337,7 @@
           .concat(e.orderId, "&token=")
           .concat(e.token);
       if (t) {
-        var r = { isWebflow: !0, type: "success", detail: n };
+        var r = { isSankalp: !0, type: "success", detail: n };
         window.parent.postMessage(JSON.stringify(r), window.location.origin);
       } else window.location.href = n;
     };
@@ -14222,9 +14222,9 @@
       A = function (e, t, n) {
         if (
           (e.preventDefault(),
-          window.Webflow.env("design") || window.Webflow.env("preview"))
+          window.Sankalp.env("design") || window.Sankalp.env("preview"))
         )
-          window.Webflow.env("preview") &&
+          window.Sankalp.env("preview") &&
             window.alert("Web Payments is not available in preview mode.");
         else {
           var r = e.currentTarget,
@@ -20787,15 +20787,15 @@
         h,
         A,
         b = "https://kkbii6szaa.execute-api.us-east-1.amazonaws.com/staging/",
-        g = "https://prism.webflow.com/";
+        g = "https://prism.Sankalp.com/";
       for (
         l.PRISM_DEV_ROOT = b,
           l.PRISM_ROOT = g,
           l.GENERAL_DUMMY_IMG_PATH = d + "img/generic/image",
           l.PEOPLE_DUMMY_IMG_PATH = d + "img/people/image",
-          r.WEBFLOW_NODE_ID_ATTR = "data-id",
-          r.WEBFLOW_NODE_ID_PATH_ATTR = "data-sf-id",
-          r.webflowNodeInstanceIdAttr = "data-instance-of",
+          r.Sankalp_NODE_ID_ATTR = "data-id",
+          r.Sankalp_NODE_ID_PATH_ATTR = "data-sf-id",
+          r.SankalpNodeInstanceIdAttr = "data-instance-of",
           r.VALID_CONTENT_NODES = [
             "p",
             "h1",
@@ -24689,8 +24689,8 @@
           (e.VALID_TYPOGRAPHIC_CONTENT_NODES =
             r.VALID_TYPOGRAPHIC_CONTENT_NODES),
           (e.VOID_HTML_TAGS = r.VOID_HTML_TAGS),
-          (e.WEBFLOW_NODE_ID_ATTR = r.WEBFLOW_NODE_ID_ATTR),
-          (e.WEBFLOW_NODE_ID_PATH_ATTR = r.WEBFLOW_NODE_ID_PATH_ATTR),
+          (e.Sankalp_NODE_ID_ATTR = r.Sankalp_NODE_ID_ATTR),
+          (e.Sankalp_NODE_ID_PATH_ATTR = r.Sankalp_NODE_ID_PATH_ATTR),
           (e.allowedTypoContentTags = r.allowedTypoContentTags),
           (e.blankTemplate = r.blankTemplate),
           (e.collectionPresets = r.collectionPresets),
@@ -24734,7 +24734,7 @@
           (e.stripeCountryCodes = r.stripeCountryCodes),
           (e.stripeCurrencyCodes = r.stripeCurrencyCodes),
           (e.stripeCurrencyList = r.stripeCurrencyList),
-          (e.webflowNodeInstanceIdAttr = r.webflowNodeInstanceIdAttr),
+          (e.SankalpNodeInstanceIdAttr = r.SankalpNodeInstanceIdAttr),
           (e.showcaseCollectionsConfig = r.showcaseCollectionsConfig);
       }
       (r.commerceCurrencyLocales = [
@@ -25566,8 +25566,8 @@
         (r.DEFAULT_OAUTH_APP_IMAGE =
           "https://daks2k3a4ib2z.cloudfront.net/img/integrations.png"),
         (r.getskBadgeStatus = function (e, t, n, r) {
-          return e && void 0 !== e.showWebflowBadge
-            ? e.showWebflowBadge
+          return e && void 0 !== e.showSankalpBadge
+            ? e.showSankalpBadge
             : !r && !n && (!t || "free" === t.plan || "lite" === t.plan);
         }),
         (r.PUBLISH_TASK = {}),
@@ -25609,7 +25609,7 @@
                 "Discover beautiful examples of 3D websites that are sure to give you the unique web design inspiration you're looking for.",
               h1Text: "3D websites",
               h2Text:
-                "Browse through 3D websites, templates, and cloneables â€” designed by members of the Webflow Community.",
+                "Browse through 3D websites, templates, and cloneables â€” designed by members of the Sankalp Community.",
             },
             {
               slug: "music-websites",
@@ -25618,7 +25618,7 @@
                 "Discover beautiful examples of music websites that are sure to give you the unique web design inspiration you're looking for.",
               h1Text: "Music websites",
               h2Text:
-                "Browse through music websites, templates, and cloneables â€” designed by members of the Webflow Community.",
+                "Browse through music websites, templates, and cloneables â€” designed by members of the Sankalp Community.",
             },
             {
               slug: "interactive-websites",
@@ -25627,7 +25627,7 @@
                 "Discover beautiful examples of interactive websites that are sure to give you the unique web design inspiration you're looking for.",
               h1Text: "Interactive websites",
               h2Text:
-                "Browse through interactive websites, templates, and cloneables â€” designed by members of the Webflow Community.",
+                "Browse through interactive websites, templates, and cloneables â€” designed by members of the Sankalp Community.",
             },
             {
               slug: "startup-websites",
@@ -25636,7 +25636,7 @@
                 "Discover beautiful examples of startup websites that are sure to give you the unique web design inspiration you're looking for.",
               h1Text: "Startup websites",
               h2Text:
-                "Browse through startup websites, templates, and cloneables â€” designed by members of the Webflow Community.",
+                "Browse through startup websites, templates, and cloneables â€” designed by members of the Sankalp Community.",
             },
             {
               slug: "portfolio-websites",
@@ -25646,7 +25646,7 @@
                 "Discover beautiful examples of portfolio websites that are sure to give you the unique web design inspiration you're looking for.",
               h1Text: "Portfolio websites",
               h2Text:
-                "Browse through portfolio websites, templates, and cloneables â€” designed by members of the Webflow Community.",
+                "Browse through portfolio websites, templates, and cloneables â€” designed by members of the Sankalp Community.",
             },
           ],
         }),
@@ -26526,28 +26526,28 @@
               a,
               c = o.attr("data-sf-status"),
               p = o.attr("data-sf-domain") || "";
-            /\.webflow\.io$/i.test(p) && u.hostname !== p && (c = !0),
+            /\.Sankalp\.io$/i.test(p) && u.hostname !== p && (c = !0),
               c &&
                 !s &&
                 ((t =
                   t ||
                   ((n = e('<a class="s-sankalp-badge"></a>').attr(
                     "href",
-                    "https://webflow.com?utm_campaign=brandjs"
+                    "https://Sankalp.com?utm_campaign=brandjs"
                   )),
                   (r = e("<img>")
                     .attr(
                       "src",
-                      "https://d3e54v103j8qbb.cloudfront.net/img/webflow-badge-icon.f67cd735e3.svg"
+                      "https://d3e54v103j8qbb.cloudfront.net/img/Sankalp-badge-icon.f67cd735e3.svg"
                     )
                     .attr("alt", "")
                     .css({ marginRight: "8px", width: "16px" })),
                   (a = e("<img>")
                     .attr(
                       "src",
-                      "https://d1otoma47x30pg.cloudfront.net/img/webflow-badge-text.6faa6a38cd.svg"
+                      "https://d1otoma47x30pg.cloudfront.net/img/Sankalp-badge-text.6faa6a38cd.svg"
                     )
-                    .attr("alt", "Made in Webflow")),
+                    .attr("alt", "Made in Sankalp")),
                   n.append(r, a),
                   n[0])),
                 f(),
@@ -26564,7 +26564,7 @@
     var r = window.$,
       i = n(188) && r.tram;
       e.exports = (function () {
-      var e = { VERSION: "1.6.0-Webflow" },
+      var e = { VERSION: "1.6.0-Sankalp" },
         t = {},
         n = Array.prototype,
         r = Object.prototype,
@@ -26814,12 +26814,12 @@
             n.load ||
             function () {
               (i = !0),
-                (window.WebflowEditor = !0),
+                (window.SankalpEditor = !0),
                 o.off(u, d),
                 (function (e) {
                   var t = window.document.createElement("iframe");
                   (t.src =
-                    "https://webflow.com/site/third-party-cookie-check.html"),
+                    "https://Sankalp.com/site/third-party-cookie-check.html"),
                     (t.style.display = "none"),
                     (t.sandbox = "allow-scripts allow-same-origin");
                   var n = function n(r) {
@@ -26835,7 +26835,7 @@
                     window.document.body.appendChild(t);
                 })(function (t) {
                   e.ajax({
-                    url: h("https://editor-api.webflow.com/api/editor/view"),
+                    url: h("https://editor-api.Sankalp.com/api/editor/view"),
                     data: { siteId: a.attr("data-sf-site") },
                     xhrFields: { withCredentials: !0 },
                     dataType: "json",
@@ -26849,7 +26849,7 @@
           l =
             localStorage &&
             localStorage.getItem &&
-            localStorage.getItem("WebflowEditor");
+            localStorage.getItem("SankalpEditor");
         } catch (e) {}
         function d() {
           i || (/\?edit/.test(c.hash) && s());
@@ -26860,7 +26860,7 @@
               ? ((t.thirdPartyCookiesSupported = e),
                 p(M(t.bugReporterScriptPath), function () {
                   p(M(t.scriptPath), function () {
-                    window.WebflowEditor(t);
+                    window.SankalpEditor(t);
                   });
                 }))
               : console.error("Could not load editor data");
@@ -26878,7 +26878,7 @@
         function M(e) {
           return e.indexOf("//") >= 0
             ? e
-            : h("https://editor-api.webflow.com" + e);
+            : h("https://editor-api.Sankalp.com" + e);
         }
         function h(e) {
           return e.replace(/([^:])\/\//g, "$1/");
@@ -28441,7 +28441,7 @@
       return { value: e.value };
     };
     t.createPluginInstance = function (e) {
-      var t = window.Webflow.require("lottie").createInstance(e);
+      var t = window.Sankalp.require("lottie").createInstance(e);
       return t.stop(), t.setSubframe(!0), t;
     };
     t.renderPlugin = function (e, t, n) {
@@ -28451,7 +28451,7 @@
       }
     };
     t.clearPlugin = function (e) {
-      window.Webflow.require("lottie").createInstance(e).stop();
+      window.Sankalp.require("lottie").createInstance(e).stop();
     };
   },
   function (e, t, n) {
@@ -31094,7 +31094,7 @@
         var t = e.siteId;
         (M = (0, o.createApolloClient)({
           path:
-            window.Webflow.env("design") || window.Webflow.env("preview")
+            window.Sankalp.env("design") || window.Sankalp.env("preview")
               ? "/api/v1/sites/".concat(t, "/apollo")
               : g,
           maxAttempts: 5,
@@ -31112,8 +31112,8 @@
           v(),
           E(),
           (0, p.triggerRender)(null, !0),
-          window.Webflow.env() ||
-            window.Webflow.load((0, b.renderPaypalButtons)(M));
+          window.Sankalp.env() ||
+            window.Sankalp.load((0, b.renderPaypalButtons)(M));
       }),
       (t.preview = function () {
         v(), E(), (0, p.triggerRender)(null, !0);
@@ -36457,7 +36457,7 @@
     var r = n(0);
     Object.defineProperty(t, "__esModule", { value: !0 }),
       (t.fetchWithCsrf = function (e, t) {
-        if (window.Webflow.env("design") || window.Webflow.env("preview"))
+        if (window.Sankalp.env("design") || window.Sankalp.env("preview"))
           return fetch(e, t);
         var n = u(),
           r = (t && t.headers) || {};
@@ -40019,7 +40019,7 @@
                               ((t["innerHTML" === e.to ? "innerText" : e.to] =
                                 (0, A.renderPriceFromSettings)(
                                   n.f_price_,
-                                  window.__WEBFLOW_CURRENCY_SETTINGS
+                                  window.__Sankalp_CURRENCY_SETTINGS
                                 )),
                               K(t)),
                             "f_compare_at_price_7dr10dr" === e.from &&
@@ -40028,7 +40028,7 @@
                                     "innerHTML" === e.to ? "innerText" : e.to
                                   ] = (0, A.renderPriceFromSettings)(
                                     n.f_compare_at_price_7dr10dr,
-                                    window.__WEBFLOW_CURRENCY_SETTINGS
+                                    window.__Sankalp_CURRENCY_SETTINGS
                                   ))
                                 : (t[
                                     "innerHTML" === e.to ? "innerText" : e.to
@@ -40117,8 +40117,8 @@
                 )[0];
                 M instanceof Element && (M.style.display = "none");
               }),
-                window.Webflow.require("lightbox") &&
-                  window.Webflow.require("lightbox").ready();
+                window.Sankalp.require("lightbox") &&
+                  window.Sankalp.require("lightbox").ready();
             } else N(e, { selectedSku: "" });
           });
         };
@@ -40130,7 +40130,7 @@
               .concat(d.DATA_ATTR_NODE_TYPE, '="')
               .concat(d.NODE_TYPE_COMMERCE_ADD_TO_CART_FORM, '"]')
           );
-          window.Webflow.env("preview")
+          window.Sankalp.env("preview")
             ? e.detail.isInitial &&
               (0, g.default)(r, function (e) {
                 var t = new y.PillGroups(e, function (e) {
@@ -40140,7 +40140,7 @@
                 });
                 t.init();
               })
-            : window.Webflow.env("design") ||
+            : window.Sankalp.env("design") ||
               (0, g.default)(r, function (r) {
                 var o = (0, h.findElementByNodeType)(
                   d.NODE_TYPE_COMMERCE_BUY_NOW_BUTTON,
@@ -40488,7 +40488,7 @@
         );
       },
       V = function (e, t) {
-        if ((e.preventDefault(), !window.Webflow.env("preview"))) {
+        if ((e.preventDefault(), !window.Sankalp.env("preview"))) {
           var n = e.target,
             r = (0, h.findClosestElementByNodeType)(
               d.NODE_TYPE_COMMERCE_ADD_TO_CART_FORM,
@@ -44134,7 +44134,7 @@
     Object.defineProperty(t, "__esModule", { value: !0 }),
       (t.getConst = t.of = t.Const = t.ConstType = void 0);
     var i = Object.create,
-      o = "@webflow/Const/value";
+      o = "@Sankalp/Const/value";
     t.ConstType = function e() {
       (0, r.default)(this, e);
     };
@@ -44160,7 +44160,7 @@
     Object.defineProperty(t, "__esModule", { value: !0 }),
       (t.runIdentity = t.of = t.Identity = t.IdentityType = void 0);
     var i = Object.create,
-      o = "@webflow/Identity/value";
+      o = "@Sankalp/Identity/value";
     t.IdentityType = function e() {
       (0, r.default)(this, e);
     };
@@ -44189,7 +44189,7 @@
       o = function () {
         return this;
       },
-      a = "@webflow/Option";
+      a = "@Sankalp/Option";
     t.Option = function e() {
       (0, r.default)(this, e);
     };
@@ -44256,8 +44256,8 @@
       o = function () {
         return this;
       },
-      a = "@webflow/Result/value",
-      c = "@webflow/Result/error";
+      a = "@Sankalp/Result/value",
+      c = "@Sankalp/Result/error";
     t.Result = function e() {
       (0, r.default)(this, e);
     };
@@ -44475,8 +44475,8 @@
       l = i(n(52)),
       d = i(n(9)),
       f = i(n(684)),
-      p = { "@webflow/Boolean": !0 },
-      m = { "@webflow/Boolean": !1 },
+      p = { "@Sankalp/Boolean": !0 },
+      m = { "@Sankalp/Boolean": !1 },
       M = function (e, t) {
         if (e === t || (e != e && t != t)) return !0;
         if (!e || !t) return !1;
@@ -46791,7 +46791,7 @@
         );
       },
       B = function (e, t) {
-        if (!window.Webflow.env("design") && !window.Webflow.env("preview")) {
+        if (!window.Sankalp.env("design") && !window.Sankalp.env("preview")) {
           e.preventDefault();
           var n = e.currentTarget;
           if (n instanceof HTMLElement) {
@@ -46857,7 +46857,7 @@
         }
       },
       x = function (e, t) {
-        if (!window.Webflow.env("design") && !window.Webflow.env("preview")) {
+        if (!window.Sankalp.env("design") && !window.Sankalp.env("preview")) {
           e.preventDefault();
           var n = e.currentTarget;
           if (
@@ -46922,7 +46922,7 @@
         }
       },
       W = function (e) {
-        if (!window.Webflow.env("design") && !window.Webflow.env("preview")) {
+        if (!window.Sankalp.env("design") && !window.Sankalp.env("preview")) {
           e.preventDefault();
           var t = e.currentTarget;
           t instanceof HTMLInputElement &&
@@ -46979,24 +46979,24 @@
                     o.style.removeProperty("display"),
                     A &&
                       !r &&
-                      (window.Webflow.tram(o)
+                      (window.Sankalp.tram(o)
                         .add(M)
                         .set({ opacity: 0 })
                         .start({ opacity: 1 }),
-                      window.Webflow.tram(a)
+                      window.Sankalp.tram(a)
                         .add("transform ".concat(p, " ").concat(m, " 0ms"))
                         .set(u)
                         .start(s)))
                   : (t.removeAttribute(d.CART_OPEN),
                     A
-                      ? (window.Webflow.tram(o)
+                      ? (window.Sankalp.tram(o)
                           .add(M)
                           .start({ opacity: 0 })
                           .then(function () {
                             (o.style.display = "none"),
-                              window.Webflow.tram(a).stop();
+                              window.Sankalp.tram(a).stop();
                           }),
-                        window.Webflow.tram(a)
+                        window.Sankalp.tram(a)
                           .add(
                             "transform "
                               .concat(p, " ")
@@ -47011,7 +47011,7 @@
         }
       },
       X = function (e) {
-        if (!window.Webflow.env("design")) {
+        if (!window.Sankalp.env("design")) {
           var t = e.currentTarget,
             n = e.type;
           if (t instanceof Element) {
@@ -47054,7 +47054,7 @@
         }
       },
       U = function (e) {
-        if (!window.Webflow.env("preview")) {
+        if (!window.Sankalp.env("preview")) {
           e.preventDefault();
           var t = e.currentTarget;
           if (t instanceof Element)
@@ -47099,7 +47099,7 @@
         }
       },
       j = function (e) {
-        window.Webflow.env("preview") || e.preventDefault();
+        window.Sankalp.env("preview") || e.preventDefault();
       },
       G = function e(t) {
         var n = t.target,
@@ -47151,9 +47151,9 @@
         K.forEach(function (e) {
           var t = e.element,
             n = e.wasOpen;
-          window.Webflow.tram(t).destroy(), (t.style.opacity = "1");
+          window.Sankalp.tram(t).destroy(), (t.style.opacity = "1");
           var r = ee(t);
-          r && (window.Webflow.tram(r).destroy(), (r.style.transform = "")),
+          r && (window.Sankalp.tram(r).destroy(), (r.style.transform = "")),
             n ? t.style.removeProperty("display") : (t.style.display = "none");
           var i = t.parentElement;
           i && i.removeAttribute(d.CART_OPEN);
@@ -47236,8 +47236,8 @@
     t.renderCart = J;
     var Z = function (e, t, n) {
         if (
-          !window.Webflow.env("design") &&
-          !window.Webflow.env("preview") &&
+          !window.Sankalp.env("design") &&
+          !window.Sankalp.env("preview") &&
           e instanceof CustomEvent &&
           e.type === d.RENDER_TREE_EVENT
         ) {
@@ -47336,7 +47336,7 @@
           e.on("submit", k, j),
           e.on("keyup", Boolean, $),
           e.on("click", Boolean, te),
-          (window.Webflow.env("design") || window.Webflow.env("preview")) &&
+          (window.Sankalp.env("design") || window.Sankalp.env("preview")) &&
             (window.addEventListener("__sk_preview", H),
             window.addEventListener("__sk_design", Y));
       };
@@ -47467,8 +47467,8 @@
       },
       b = function (e, t, n) {
         if (
-          !window.Webflow.env("design") &&
-          !window.Webflow.env("preview") &&
+          !window.Sankalp.env("design") &&
+          !window.Sankalp.env("preview") &&
           e instanceof CustomEvent &&
           e.type === a.RENDER_TREE_EVENT
         ) {
@@ -47503,7 +47503,7 @@
       E = !1,
       v = function (e, t, n) {
         if (
-          !(window.Webflow.env("design") || window.Webflow.env("preview") || E)
+          !(window.Sankalp.env("design") || window.Sankalp.env("preview") || E)
         ) {
           var r = e.currentTarget;
           if (r instanceof Element) {
@@ -47898,8 +47898,8 @@
       },
       p = function (e, t) {
         if (
-          !window.Webflow.env("design") &&
-          !window.Webflow.env("preview") &&
+          !window.Sankalp.env("design") &&
+          !window.Sankalp.env("preview") &&
           e instanceof CustomEvent &&
           e.type === d.RENDER_TREE_EVENT
         ) {
@@ -48756,8 +48756,8 @@
       d = !1,
       f = function (e, t) {
         if (
-          !window.Webflow.env("design") &&
-          !window.Webflow.env("preview") &&
+          !window.Sankalp.env("design") &&
+          !window.Sankalp.env("preview") &&
           e instanceof CustomEvent &&
           e.type === s.RENDER_TREE_EVENT
         ) {
@@ -48780,7 +48780,7 @@
       p = !1,
       m = function (e, t) {
         if (
-          !(window.Webflow.env("design") || window.Webflow.env("preview") || p)
+          !(window.Sankalp.env("design") || window.Sankalp.env("preview") || p)
         ) {
           var n = e.currentTarget;
           if (n instanceof Element) {
@@ -48906,7 +48906,7 @@
                                 "INSTRUMENT_DECLINED" === t.details[0].issue
                               ) {
                                 var n = {
-                                  isWebflow: !0,
+                                  isSankalp: !0,
                                   type: "error",
                                   detail: t,
                                 };
@@ -48983,7 +48983,7 @@
                             if (u.origin === window.location.origin) {
                               var s = (0, i.safeParseJson)(String(u.data));
                               s &&
-                                !0 === s.isWebflow &&
+                                !0 === s.isSankalp &&
                                 s.type &&
                                 s.detail &&
                                 ("success" === s.type &&
@@ -49338,12 +49338,12 @@
               function () {
                 !(function () {
                   (o = e("html").attr("data-sf-site")),
-                    (c = "https://webflow.com/api/v1/form/" + o),
+                    (c = "https://Sankalp.com/api/v1/form/" + o),
                     f &&
-                      c.indexOf("https://webflow.com") >= 0 &&
+                      c.indexOf("https://Sankalp.com") >= 0 &&
                       (c = c.replace(
-                        "https://webflow.com",
-                        "http://formdata.webflow.com"
+                        "https://Sankalp.com",
+                        "http://formdata.Sankalp.com"
                       ));
                   if (
                     ((u = "".concat(c, "/signFile")),
@@ -49839,10 +49839,10 @@
                 (t = o && r.env("design")),
                   a.destroy(),
                   (n = {}),
-                  c.find(u).webflowLightBox();
+                  c.find(u).SankalpLightBox();
               }),
           jQuery.fn.extend({
-            webflowLightBox: function () {
+            SankalpLightBox: function () {
               e.each(this, function (n, r) {
                 var i = e.data(r, u);
                 i ||
@@ -50734,7 +50734,7 @@
   },
 ]);
 
-Webflow.require("ix2").init({
+Sankalp.require("ix2").init({
   events: {
     "e-2": {
       id: "e-2",
@@ -53816,8 +53816,32 @@ Webflow.require("ix2").init({
   },
 });
 
-Webflow.require("commerce") &&
-  Webflow.require("commerce").init({
+Sankalp.require("commerce") &&
+  Sankalp.require("commerce").init({
     siteId: "Sankalp",
     apiUrl: "",
   });
+
+// Get modal element
+var modal = document.querySelector('.modal');
+
+// Get close modal button
+var closeBtn = document.querySelector('.closeBtn');
+
+// For closing the modal
+closeBtn.addEventListener('click', e => {
+    modal.style.display = 'none';
+});
+
+// For closing modal on outside click
+window.addEventListener('click', e => {
+    if (e.target == modal) {
+        modal.style.display = 'none';
+    }
+});
+
+window.addEventListener("DOMContentLoaded", (event) => {
+    setTimeout(() => {
+        modal.style.display = "block";
+    }, 3000)
+});
